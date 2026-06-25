@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🎨 幻灯片预览索引</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Segoe UI', system-ui, sans-serif;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      min-height: 100vh;
+      padding: 40px 20px;
+      color: #1e293b;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .header {
+      text-align: center;
+      color: white;
+      margin-bottom: 50px;
+    }
+    .header h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+      font-weight: 800;
+    }
+    .header p {
+      font-size: 1.2rem;
+      opacity: 0.9;
+    }
+    .stats {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      margin-bottom: 40px;
+      flex-wrap: wrap;
+    }
+    .stat {
+      background: rgba(255,255,255,0.2);
+      backdrop-filter: blur(10px);
+      padding: 15px 30px;
+      border-radius: 12px;
+      color: white;
+      text-align: center;
+    }
+    .stat-num {
+      font-size: 2rem;
+      font-weight: bold;
+      display: block;
+    }
+    .stat-label {
+      font-size: 0.9rem;
+      opacity: 0.9;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+      gap: 25px;
+    }
+    .card {
+      background: white;
+      border-radius: 16px;
+      padding: 25px;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+      transition: all 0.3s ease;
+      border-top: 4px solid var(--theme-color, #2563eb);
+    }
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 30px 60px rgba(0,0,0,0.3);
+    }
+    .card-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 15px;
+    }
+    .card-number {
+      font-size: 1.5rem;
+      font-weight: 800;
+      color: #94a3b8;
+    }
+    .card-theme {
+      font-size: 0.85rem;
+      background: var(--theme-color);
+      color: white;
+      padding: 4px 12px;
+      border-radius: 12px;
+      font-weight: 600;
+    }
+    .card-title {
+      font-size: 1.3rem;
+      color: #1e293b;
+      margin-bottom: 20px;
+      line-height: 1.4;
+    }
+    .card-meta {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      padding: 15px 0;
+      border-top: 1px solid #e2e8f0;
+      border-bottom: 1px solid #e2e8f0;
+      margin-bottom: 20px;
+    }
+    .meta-item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 0.9rem;
+      color: #64748b;
+    }
+    .meta-icon {
+      font-size: 1rem;
+    }
+    .card-btn {
+      display: block;
+      text-align: center;
+      background: var(--theme-color);
+      color: white;
+      text-decoration: none;
+      padding: 12px 24px;
+      border-radius: 10px;
+      font-weight: 600;
+      transition: all 0.2s;
+    }
+    .card-btn:hover {
+      transform: scale(1.05);
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    }
+    .footer {
+      text-align: center;
+      color: white;
+      margin-top: 50px;
+      opacity: 0.8;
+    }
+    .footer a {
+      color: white;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>🎨 幻灯片预览索引</h1>
+      <p>内容生产工作流 · Skill 3 输出</p>
+    </div>
+
+    <div class="stats">
+      <div class="stat">
+        <span class="stat-num">2</span>
+        <span class="stat-label">幻灯片文件</span>
+      </div>
+      <div class="stat">
+        <span class="stat-num">38</span>
+        <span class="stat-label">总页数</span>
+      </div>
+      <div class="stat">
+        <span class="stat-num">1</span>
+        <span class="stat-label">不同主题</span>
+      </div>
+    </div>
+
+    <div class="grid">
+      
+        <div class="card" style="--theme-color: #0891b2;">
+          <div class="card-header">
+            <span class="card-number">#01</span>
+            <span class="card-theme">Ocean 主题</span>
+          </div>
+          <h3 class="card-title">AI在医疗健康领域的应用与未来</h3>
+          <div class="card-meta">
+            <div class="meta-item">
+              <span class="meta-icon">📄</span>
+              <span>19 页幻灯片</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-icon">💾</span>
+              <span>20.1 KB</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-icon">🕒</span>
+              <span>2026-06-25 20:36:59</span>
+            </div>
+          </div>
+          <a href="slides-AI在医疗健康领域的应用与未来-23cab733.html" target="_blank" class="card-btn">
+            🚀 打开预览
+          </a>
+        </div>
+
+        <div class="card" style="--theme-color: #0891b2;">
+          <div class="card-header">
+            <span class="card-number">#02</span>
+            <span class="card-theme">Ocean 主题</span>
+          </div>
+          <h3 class="card-title">AI在医疗健康领域的应用与未来</h3>
+          <div class="card-meta">
+            <div class="meta-item">
+              <span class="meta-icon">📄</span>
+              <span>19 页幻灯片</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-icon">💾</span>
+              <span>20.1 KB</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-icon">🕒</span>
+              <span>2026-06-25 20:36:04</span>
+            </div>
+          </div>
+          <a href="slides-AI在医疗健康领域的应用与未来-314e8491.html" target="_blank" class="card-btn">
+            🚀 打开预览
+          </a>
+        </div>
+    </div>
+
+    <div class="footer">
+      <p>💡 点击任意卡片打开对应幻灯片 | 使用 ← → 键翻页 | F 键全屏</p>
+      <p style="margin-top: 10px;">
+        📅 生成于 2026-06-25 21:08:25 | 
+        由 content-workflow 自动化生成
+      </p>
+    </div>
+  </div>
+</body>
+</html>
